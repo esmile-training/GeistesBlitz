@@ -8,7 +8,7 @@
 			</td>
 		</tr>
 		<tr>
-			<td>合言葉</td>
+			<td>パスワード</td>
 			<td>
 				<?= Form::input('password', '', array( 'type'=>'password', 'style' => 'padding:3px;')); ?>
 			</td>

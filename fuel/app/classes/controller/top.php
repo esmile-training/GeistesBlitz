@@ -31,6 +31,6 @@ class Controller_Top extends Controller_Base_Game
 		$_SESSION['user_id'] = $this->view_data['user']->id;
 
 		//ビュー表示
-		Response::redirect('mypage');
+		Response::redirect('main');
 	}
 }

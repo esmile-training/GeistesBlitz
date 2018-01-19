@@ -12,7 +12,7 @@ class Controller_Admin extends Controller_Base_Admin
 	/*
 	 * キャラ一覧
 	 */
-	public function action_user_list( )
+	public function action_user_list()
 	{
 		//検索条件
 		$param = input::get();
@@ -57,12 +57,12 @@ class Controller_Admin extends Controller_Base_Admin
 			'limit' => Pagination::get('per_page'),
 			'offset' => Pagination::get('offset'),
 			'order_by' => array('id' => 'asc'),
-			
 		));
 
 		//ビュー表示
 		return View_Wrap::admin('user_list', $this->view_data);
 	}
+	
 	/*
 	 * ユーザ編集画面
 	 */
